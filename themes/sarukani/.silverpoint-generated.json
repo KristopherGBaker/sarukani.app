@@ -1,0 +1,55 @@
+{
+  "files" : [
+    {
+      "path" : "data/features.yml",
+      "sha256" : "38777547cb6e7e9fa5b4960ffa885845545524968210cddea13c31bd8cb7eba5"
+    },
+    {
+      "path" : "data/home.yml",
+      "sha256" : "3d4320b10a1ca5bd6f2272d07e3c1d73a178c59d7f6f3fecc544323b1ffbe0cc"
+    },
+    {
+      "path" : "data/site.yml",
+      "sha256" : "936f618f3c242e823a9a4e5a2bf0ad8d6f63d9d8f1fe1756932834d8f9b0aa1e"
+    },
+    {
+      "path" : "themes/sarukani/assets/site.css",
+      "sha256" : "68fd6a6046dc39daf675b775ac3a83986d97b9d10db9d2ef6803172d8318cb26"
+    },
+    {
+      "path" : "themes/sarukani/assets/tokens.css",
+      "sha256" : "6ede95cdbb68978beb27958aae1d44cf571ebeb736d08acdc902c09c9ab97cfa"
+    },
+    {
+      "path" : "themes/sarukani/templates/base.html",
+      "sha256" : "10dce8a83b65993c7d110d358b8be3cd0fcf3107008b49b38ecfd6cd190aa020"
+    },
+    {
+      "path" : "themes/sarukani/templates/layouts/article.html",
+      "sha256" : "076dfc6fa140fcbdd915d4d36cd852ce3693ace1caea6e6e8bed912382040b9a"
+    },
+    {
+      "path" : "themes/sarukani/templates/layouts/landing.html",
+      "sha256" : "b1d234f8a12e23a64df5a584d831104edc50a6206f59880bcedf9d6ee843a5db"
+    },
+    {
+      "path" : "themes/sarukani/templates/layouts/page.html",
+      "sha256" : "4644cc91c30120194b9807c48da7b7e2418c2708455b06ef86ea663177a02256"
+    },
+    {
+      "path" : "themes/sarukani/templates/partials/site-footer.html",
+      "sha256" : "410a64841d1cc943935145c5af54431bfaf083783c62f73a3105242a9263967b"
+    },
+    {
+      "path" : "themes/sarukani/templates/partials/site-header.html",
+      "sha256" : "f2abb05c31d40773e9f7268f2653d7a85d5cd265d7ea32e9ffb7fb54df63f69e"
+    },
+    {
+      "path" : "themes/sarukani/theme.json",
+      "sha256" : "4045a8d2d0a0891ac96e0e438ea0cfa559133c0ceaaaa058ce5cd047a85aebef"
+    }
+  ],
+  "generator" : "silverpoint",
+  "theme" : "sarukani",
+  "version" : 1
+}

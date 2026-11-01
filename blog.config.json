@@ -1,0 +1,11 @@
+{
+  "title": "Sarukani",
+  "description": "A WaniKani client for iPhone and iPad, with reverse practice, past-Burned reviews and Anki decks.",
+  "baseURL": "https://sarukani.app/",
+  "theme": "sarukani",
+  "outputDir": "public",
+  "home": {
+    "template": "landing"
+  },
+  "collections": []
+}

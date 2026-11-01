@@ -1,0 +1,20 @@
+<div class="site-footer--0" data-name="Site Footer" data-partial="site-footer">
+  <div class="site-footer--1" data-name="Footer rule"></div>
+  <div class="site-footer--2" data-name="Footer row">
+    <div class="site-footer--3" data-name="Footer brand">
+      <div class="site-footer--4" data-name="Footer mark">猿蟹 Sarukani</div>
+      <div class="site-footer--5" data-name="Footer note">{{ data.site.footer_note|escape }}</div>
+    </div>
+    <div class="site-footer--6" data-name="Footer links">
+      <a class="sp-link" href="{{ site.baseURL }}privacy/"{% if page.path == "privacy/" %} aria-current="page"{% endif %}>
+      <div class="site-footer--7" data-name="Footer Privacy">{{ data.site.footer_privacy|escape }}</div>
+      </a>
+      <a class="sp-link" href="mailto:sarukani@krisbaker.com">
+      <div class="site-footer--8" data-name="Footer Contact">{{ data.site.footer_contact|escape }}</div>
+      </a>
+      <a class="sp-link" href="https://krisbaker.com/" rel="noopener">
+      <div class="site-footer--9" data-name="Footer Maker">Kristopher Baker</div>
+      </a>
+    </div>
+  </div>
+</div>

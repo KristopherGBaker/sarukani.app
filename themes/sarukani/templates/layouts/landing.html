@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+{% block page_class %}landing-0{% endblock %}
+{% block main %}
+<div class="landing-1" data-name="Hero">
+  <div class="landing-2" data-name="Hero text">
+    <div class="landing-3" data-name="Hero kicker">{{ data.home.kicker|escape }}</div>
+    <div class="landing-4" data-name="Hero promise">{{ data.home.promise|escape }}</div>
+    <div class="landing-5" data-name="Hero subline">{{ data.home.subline|escape }}</div>
+    <div class="landing-6" data-name="Hero actions">
+      <a class="sp-link" href="{{ site.baseURL }}#beta">
+      <div class="landing-7" data-name="Hero beta">
+        <div class="landing-8" data-name="Hero beta label">{{ data.home.hero_beta|escape }}</div>
+      </div>
+      </a>
+      <a class="sp-link" href="{{ site.baseURL }}#features">
+      <div class="landing-9" data-name="Hero more">
+        <div class="landing-10" data-name="Hero more label">{{ data.home.hero_more|escape }}</div>
+      </div>
+      </a>
+    </div>
+    <div class="landing-11" data-name="Hero note">{{ data.home.note|escape }}</div>
+  </div>
+  <div class="landing-12" data-name="Hero review">
+    <div class="landing-13" data-name="Review ground">
+      <div class="landing-14" data-name="Review top">
+        <div class="landing-15" data-name="Review pill">
+          <div class="landing-16" data-name="Review pill label">Kanji</div>
+        </div>
+        <div class="landing-17" data-name="Review counter">3 / 20</div>
+      </div>
+      <div class="landing-18" data-name="Review glyph">山</div>
+      <div class="landing-19" data-name="Review task">Meaning</div>
+    </div>
+    <div class="landing-20" data-name="Review seal">
+      <div class="landing-21" data-name="Character">正</div>
+    </div>
+  </div>
+</div>
+<div class="landing-22" data-name="Features">
+  <div class="landing-23" data-name="Features head">
+    <div class="landing-24" data-name="Features kicker">{{ data.home.features_kicker|escape }}</div>
+    <div class="landing-25" data-name="Features title">{{ data.home.features_title|escape }}</div>
+  </div>
+  <div class="landing-26" data-name="Feature rows">
+    {% for item in data.features %}
+      <div class="landing-27" data-name="Feature" data-item="features">
+        <div class="landing-28" data-name="Feature reading">{{ item.reading|escape }}</div>
+        <div class="landing-29" data-name="Feature term">{{ item.term|escape }}</div>
+        <div class="landing-30" data-name="Feature title">{{ item.title|escape }}</div>
+        <div class="landing-31" data-name="Feature body">{{ item.body|escape }}</div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+<div class="landing-32" data-name="Spotlight">
+  <div class="landing-33" data-name="Spotlight text">
+    <div class="landing-34" data-name="Spotlight kicker">{{ data.home.spotlight_kicker|escape }}</div>
+    <div class="landing-35" data-name="Spotlight title">{{ data.home.spotlight_title|escape }}</div>
+    <div class="landing-36" data-name="Spotlight body">{{ data.home.spotlight_body|escape }}</div>
+  </div>
+  <div class="landing-37" data-name="Spotlight cards">
+    <div class="landing-38" data-name="Spotlight reviews">
+      <div class="landing-39" data-name="Name">
+        <div class="landing-40" data-name="Reading">ふくしゅう</div>
+        <div class="landing-41" data-name="Term">復習</div>
+        <div class="landing-42" data-name="English">Reviews</div>
+      </div>
+      <div class="landing-43" data-name="Trailing">
+        <div class="landing-44" data-name="Count">18</div>
+        <img class="landing-45" data-name="Chevron" data-symbol="chevron.right" alt="" src="data:image/png;base64,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">
+      </div>
+    </div>
+    <div class="landing-46" data-name="Spotlight reverse">
+      <div class="landing-47" data-name="Name">
+        <div class="landing-48" data-name="Reading">ぎゃくふくしゅう</div>
+        <div class="landing-49" data-name="Term">逆復習</div>
+        <div class="landing-50" data-name="English">Reverse reviews</div>
+      </div>
+      <div class="landing-51" data-name="Trailing">
+        <div class="landing-52" data-name="Count">11</div>
+        <img class="landing-53" data-name="Chevron" data-symbol="chevron.right" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAA8CAYAAAAQTCjdAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAKqADAAQAAAABAAAAPAAAAAA7uscpAAADSElEQVRoBe2ZTYiNURjHx5g7PsbH5KORKSM2aLIYYTFT0iSl2CgSG8rKpJSyk4+QIpTIalakxEJiRahZWPhMWRjdJEk+8jmDGa7fX27pOW/TeRfn3KPep37deZ857zm/e3rvc865t66uiGIGihmIOwOVSqUBdsAJ6Ig7eo7RkDsJ1Rjkj2U5bo/XFLF3Vcu/rx94XRjPwHMkpF4b0V9cP4VZnl3EaYbQHiOqy59wF6bGsfAYBZlxcBFsSPYGjPfoJk4TZJrhFtgYJnEBGuKYeIyCzAx4CDZ+kDgNozy6Cd9EIjAHymDjO4m94S08R0BmNHTCW7ChsrXFs6vwzZApwSr4Cjb0BlaHt/AcAZlG2AhDYOMliS7PrsI3Q0ZlaztoAfg3dN0P7eEtPEdApgn2gw3VWFWINs+uwjdDZhKcARuqsX2Q1Oo1BaFL1pRrPcNXoSn8lHmOgEw73AEbn0kch5JnV2GbIaIFYQk8ARvvSeyGZFYvLQjL4QXY0HaxJ+x05egdGS0IayBr9dIb2JCju7BNkRkLm+AL2FCNXRnWIEfvyEyAHtDuysZjEktzdBe2KTKz4RzY1UsLQi+0hjXI0TsyC+AK2NBMH4I0KoHeEzKLQWcsG/rANY/0vutH+meA/5XpcyCj38nk0jjGMGPaCxyAAbBxjUTtVywkVKZ2gXb/NvQodGbMctwUEvXQBc/AxhsSO+MaZYyGhNb9Dsg6tWp2D0Lsz4lrisQ8uA02tFLpaN3o3hU5g4SK/GWw8Y2Eiv/EyErucEjMhF6woQ20iv50967IGSSmwRGwoeXyJtT+/ISEytBWGAYbz0ksijxv7nBI6Iy/FvQM2tBmudu9K3IGCX2/3w0fwYaOH+siK7nDIaGCrs3GK7DxicQ2967IGSRU0LV96wcbqpX7Iiu5wyEhyTa4BzYGSZyCJFadFkSuW0Ou9R3peUhi1VEZOgs2VCv7IIlVZwwix6wh1zoPPYIW90GJnEGiBNpX2pBkGeZGVnKHQ0K1cjPYkySpPz+WpfH7KDIrQB8UG9pX1n7Vqc4tMvetIdf6/n59tU0SrwhlHcpqf4yws4Oo3akftW2SuEZ0PjwAPZOHIZ1vNpKYoUKimIH/ZAZ+AzNLAcVmL+MuAAAAAElFTkSuQmCC">
+      </div>
+    </div>
+    <div class="landing-54" data-name="Spotlight extra">
+      <div class="landing-55" data-name="Name">
+        <div class="landing-56" data-name="Reading">ほしゅう</div>
+        <div class="landing-57" data-name="Term">補習</div>
+        <div class="landing-58" data-name="English">Extra study</div>
+      </div>
+      <div class="landing-59" data-name="Trailing">
+        <div class="landing-60" data-name="Count">1</div>
+        <img class="landing-61" data-name="Chevron" data-symbol="chevron.right" alt="" src="data:image/png;base64,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">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="landing-62" data-name="Beta">
+  <div class="landing-63" data-name="Beta text">
+    <div class="landing-64" data-name="Beta kicker">{{ data.home.beta_kicker|escape }}</div>
+    <div class="landing-65" data-name="Beta title">{{ data.home.beta_title|escape }}</div>
+    <div class="landing-66" data-name="Beta body">{{ data.home.beta_body|escape }}</div>
+    <a class="sp-link" href="mailto:sarukani@krisbaker.com">
+    <div class="landing-67" data-name="Beta join">
+      <div class="landing-68" data-name="Beta join label">{{ data.home.beta_join|escape }}</div>
+    </div>
+    </a>
+  </div>
+  <div class="landing-69" data-name="Beta mark">
+    <div class="landing-70" data-name="Beta mark reading">さるかに</div>
+    <div class="landing-71" data-name="Beta mark glyphs">猿蟹</div>
+  </div>
+</div>
+{% endblock %}

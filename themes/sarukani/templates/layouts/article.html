@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block page_class %}article-0{% endblock %}
+{% block main %}
+<div class="article-1" data-name="Article hero">
+  <div class="article-2" data-name="Article kicker">Sarukani</div>
+  <div class="article-3" data-name="Article title">{{ page.title }}</div>
+  <div class="article-4" data-name="Article lead">{{ page.description }}</div>
+</div>
+<div class="article-5" data-name="Article rule wrap">
+  <div class="article-6" data-name="Article rule"></div>
+</div>
+<div class="article-7" data-name="Article page">
+  <div class="article-8" data-name="Article body" data-slot="page.content">
+    {{ page.content }}<!-- /page.content -->
+  </div>
+</div>
+{% endblock %}

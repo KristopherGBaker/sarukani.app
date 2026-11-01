@@ -1,0 +1,21 @@
+<div class="site-header--0" data-name="Site Header" data-partial="site-header">
+  <a class="sp-link" href="{{ site.baseURL }}"{% if page.path == "" %} aria-current="page"{% endif %}>
+  <div class="site-header--1" data-name="Wordmark">
+    <div class="site-header--2" data-name="Mark">猿蟹</div>
+    <div class="site-header--3" data-name="Name">Sarukani</div>
+  </div>
+  </a>
+  <div class="site-header--4" data-name="Nav">
+    <a class="sp-link" href="{{ site.baseURL }}#features">
+    <div class="site-header--5" data-name="Nav Features">{{ data.site.nav_features|escape }}</div>
+    </a>
+    <a class="sp-link" href="{{ site.baseURL }}privacy/"{% if page.path == "privacy/" %} aria-current="page"{% endif %}>
+    <div class="site-header--6" data-name="Nav Privacy">{{ data.site.nav_privacy|escape }}</div>
+    </a>
+    <a class="sp-link" href="{{ site.baseURL }}#beta">
+    <div class="site-header--7" data-name="Header Beta">
+      <div class="site-header--8" data-name="Label">{{ data.site.nav_beta|escape }}</div>
+    </div>
+    </a>
+  </div>
+</div>
