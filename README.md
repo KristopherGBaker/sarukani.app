@@ -13,3 +13,6 @@ export again; edit the copy in `data/` or the pages in `content/pages/` directly
   Silverpoint's export does not carry fonts yet; a re-export keeps it rather than replacing it.
 - `content/pages/privacy.md` is the privacy policy at `/privacy/`, the URL App Store Connect lists. Its source of truth is
   `docs/PRIVACY.md` in the Sarukani repository: change both together.
+- Until launch the home page is `layouts/holding.html` (a hand-written placeholder, copy in `data/holding.yml`) and the
+  header hides Features and Join the beta. To publish the full site, set `home.template` to `landing` in
+  `blog.config.json` and `launched` to `true` in `data/site.yml`.

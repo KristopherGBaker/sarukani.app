@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block page_class %}article-0{% endblock %}
+{% block main %}
+<!-- Hand-written, not exported: the home page until launch, in the Article layout's hero. Set home.template back to
+     "landing" in blog.config.json and data.site.launched to true to publish the full site. -->
+<div class="article-1" data-name="Holding hero">
+  <div class="article-2" data-name="Holding kicker">{{ data.holding.kicker|escape }}</div>
+  <div class="article-3" data-name="Holding title">{{ data.holding.title|escape }}</div>
+  <div class="article-4" data-name="Holding lead">{{ data.holding.lead|escape }}</div>
+</div>
+{% endblock %}

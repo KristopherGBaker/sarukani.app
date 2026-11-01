@@ -6,16 +6,20 @@
   </div>
   </a>
   <div class="site-header--4" data-name="Nav">
+    {% if data.site.launched %}
     <a class="sp-link" href="{{ site.baseURL }}#features">
     <div class="site-header--5" data-name="Nav Features">{{ data.site.nav_features|escape }}</div>
     </a>
+    {% endif %}
     <a class="sp-link" href="{{ site.baseURL }}privacy/"{% if page.path == "privacy/" %} aria-current="page"{% endif %}>
     <div class="site-header--6" data-name="Nav Privacy">{{ data.site.nav_privacy|escape }}</div>
     </a>
+    {% if data.site.launched %}
     <a class="sp-link" href="{{ site.baseURL }}#beta">
     <div class="site-header--7" data-name="Header Beta">
       <div class="site-header--8" data-name="Label">{{ data.site.nav_beta|escape }}</div>
     </div>
     </a>
+    {% endif %}
   </div>
 </div>

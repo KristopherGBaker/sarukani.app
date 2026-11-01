@@ -5,7 +5,7 @@
   "theme": "sarukani",
   "outputDir": "public",
   "home": {
-    "template": "landing"
+    "template": "holding"
   },
   "collections": []
 }
